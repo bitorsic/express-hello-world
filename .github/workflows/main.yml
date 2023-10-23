@@ -17,4 +17,3 @@ jobs:
           cd express-hello-world
           node index.js &
           echo "Access the webapp at http://34.93.168.214"
-          exit
