@@ -14,7 +14,6 @@ jobs:
         passphrase: ${{ secrets.PASSPHRASE }}
         key: ${{ secrets.SSH_PRIV_KEY }}
         script: |
-          killall node
           cd express-hello-world
           git pull
           npm i
