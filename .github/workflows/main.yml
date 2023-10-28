@@ -9,7 +9,7 @@ jobs:
     - name: Running the webapp
       uses: appleboy/ssh-action@v1.0.0
       with:
-        host: 35.239.103.30
+        host: 35.226.242.86
         username: bitorsic
         passphrase: ${{ secrets.PASSPHRASE }}
         key: ${{ secrets.SSH_PRIV_KEY }}
@@ -18,4 +18,4 @@ jobs:
           git pull
           npm i
           pm2 restart index
-          echo "Access the webapp at http://35.239.103.30"
+          echo "Access the webapp at http://35.226.242.86"
